@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+.font_size-12{font-size: 12px;}
+
+a, a:hover { text-decoration:none;}
+.topmenu{ background:#F35C91; height: auto;text-align:center; padding:16px 0 13px 0;}
+.toplogo{ padding: 3px 0;
+    width: 80%;
+    height: 55px;
+    position: relative;
+    top: 0px;
+    margin: 0 auto;}
+.topcheck{ background:rgba(241,52,101,1); height: auto; font-size:16px;}
+.topcheck .fa{
+	line-height: 1.3em;
+	margin-right: 3px;
+}
+.topcheck a{
+	color: #fff;
+}
+.font_color-w{ color:#FFF;}
+.font_color-r{ color:#F00;}
+.font_size-16{ font-size:16px;}
+.font_size-17{ font-size:17px;}
+.font_size-20{ font-size:20px !important;}
+.font_size-30{ font-size:30px;}
+.font_size-50{ font-size:50px;}
+.share_icon{ padding:20px; position:absolute; background:#FFF;filter:alpha(opacity=70); /*IE,透明度50%*/-moz-opacity:0.7; /*Firefox,透明度50%*/opacity:0.7;/*其他浏览器,透明度50%*/; right:0px;}
+.top_padding{padding:8px 8px 0 0;}
+.banner_padding{ padding:0 ;}
+.check_padding{padding:15px 0 16px 0;}
+.font-right{ text-align:right;}
+.menu{ padding:0; /*height:55px;*/}
+
+.product_box{box-shadow: 0 0px 3px rgba(71,73,72,.2);  box-sizing: border-box; width:48%; margin: 0 1% 10px;padding:0;}
+.product_box2{box-shadow: 0 0px 3px rgba(71,73,72,.2); margin: 0 0 10px; padding-bottom: 20px;}
+
+.product_pic{ padding:0;}
+.product_title{ line-height:20px; padding:10px 10px; font-weight: bold; margin-bottom: 5px; font-size:16px; color:#333; height:50px; overflow:hidden; text-overflow: ellipsis;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden;}
+.product_text{ line-height:20px; padding:3px 15px 10px; font-size:14px;}
+.product_munber{ padding:1px 15px 1px; font-size:12px; color:#999;}
+.product_price{ line-height:26px; padding:5px 15px; font-size:18px; }
+.product_price02{ line-height:30px;  font-size:18px; color:#666; padding:0 5px ;}
+.product_buy{ background:#458ec6; padding:10px 0; color:#FFF; font-size:18px;}
+.product_car{ background:#a0c725; padding:10px 0; color:#FFF;font-size:18px;}
+.product_amount{  border-bottom:#CCC solid thin; border-top:#CCC solid thin;padding:11px 0; font-size:18px;}
+.product_add{ border:#CCC solid thin; padding:13px 0;}
+.product_less{ border:#CCC solid thin;padding:13px 0; }
+.product_subject{ line-height:26px; font-size:16px; color:#555; border-bottom: 1px solid #eee; padding:10px 0; margin:0;}
+.product_edit{ border-bottom: 1px solid #eee;line-height:26px; font-size:16px;  padding:6px 15px; margin:0;background:#f1f1f1;}
+.edit_line{ border-top:#FFF 2px solid;}
+.other_products_box{ margin:0 0 10px 0;}
+
+
+.pay_subject{ line-height:26px; font-size:18px; color:#7e7e7e;  padding:8px 0; margin:10px 0 0 0;border-bottom:#CCC solid thin; border-top:#CCC solid thin;}
+.pay_products_box{ border-bottom:#ddd solid thin; border-top:#ddd solid thin; margin:0 0 10px 0;}
+.pay_title{ line-height:26px; padding:10px 15px; font-size:16px; color:#666;}
+.pay_delete{  color:#F00; height:auto; padding:15px 0;}
+.pay_pic{ overflow:hidden; }
+.pay_amount{  padding:11px 0; font-size:18px;}
+.pay_add{ border-left:#ddd solid thin; border-right:#ddd solid thin; padding:13px 0;}
+.pay_less{  border-left:#ddd solid thin; border-right:#ddd solid thin; padding:13px 0;}
+.pay_textbox01{ border-bottom:#ddd solid thin;border-top:#ddd solid thin;}
+.pay_textbox02{ border-top:#ddd solid thin;}
+.pay_total{ font-size:20px; padding: 10px 0;} 
+.pay_bgcolor-01{ background:#fff9f3;}
+.pay_bgcolor-02{ background:#eff7fd;}
+.pay_bgcolor-03{ background:#ffecd5;}
+.pay_bgcolor-04{ background:#dbeefd;}
+.pay_bgcolor-05{ background:#efefef;}
+.pay_bgcolor-06{ background:#ddeed1;}
+.pay_bgcolor-07{ background:#ffdfdf; color:#333; padding: 15px 0; font-size: 18px; margin-top:10px;}
+.pay_remark{ padding:10px 15px; color:#666; font-size:16px;}
+.pay_next{ line-height:26px; font-size:18px;   padding:15px 0; margin:10px 0 0 0; background:rgba(241,52,101,1); color:#FFF;}
+
+
+.pay_add_price{ color:#F00; font-size:28px;line-height:26px; padding:6px 15px 6px 15px; }
+.pay_add_btw{ color:#FFF; background:#a0c725;padding:5px 0 5px 0; font-size:24px;}
+.pay_add_text{ padding: 5px 15px 10px 15px ; border-bottom:#CCC solid thin; font-size:18px;}
+
+@media (min-width:768px) and ( max-width:991px){
+
+	}
+	
+@media (max-width:768px) {
+	
+}
