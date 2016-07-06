@@ -14,11 +14,11 @@
   		</div> -->
   		<div class="scart_container">
     		<div class="row scart_product_wrapper">
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-xs-12">
               <div class="info_panel text-center">還差 $200 即可享免運優惠</div>
             </div>
-          </div>
+          </div> -->
           <div class="row scart_product">
             <div class="col-xs-12">
               <div class="col-xs-3 scart_product_image">
@@ -75,7 +75,7 @@
             
 
             <div class="scart_add_wrapper" >
-              <!-- <div class="slider-c">
+              <div class="slider-c">
                 <div class="scart_add_product">
                   <a href="#"><img src="http://placehold.it/300x300" class="cennter-block img-responsive"></a>
                   <div>
@@ -106,8 +106,8 @@
                       </div>
                   </div>
                 </div>
-              </div> -->
-              <div>
+              </div>
+              <!-- <div>
                 <div class="col-xs-6 scart_add_product">
                   <a href="#"><img src="images/product-2.jpg" class="cennter-block img-responsive"></a>
                   <div>
@@ -128,7 +128,7 @@
                       </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
               
 
@@ -136,7 +136,7 @@
           </div>
 
         </div>
-        <div class="row scart_bottom">
+        <!-- <div class="row scart_bottom">
             <div class="row">
               <span>運費：</span>
               <span class="pull-right text-highlight">$120</span>
@@ -148,7 +148,7 @@
             
             <button class="btn-primary btn-buy" onclick="window.location.href='pay.php' ">下一步</button>
 
-          </div>
+          </div> -->
   		</div>
 
   		

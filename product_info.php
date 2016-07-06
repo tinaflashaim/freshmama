@@ -36,7 +36,17 @@
 
     <div class="row">
       <div class="col-md-7 col-sm-7 product_slide product_leftSec">
-        <ul class="bxslider" style="display:none">
+        <div class="js-slider-for">
+          <div><img src="http://placehold.it/600?text=1" class="img-responsive" /></div>
+          <div><img src="http://placehold.it/600?text=2" class="img-responsive" /></div>
+          <div><img src="http://placehold.it/600?text=3" class="img-responsive" /></div>
+        </div>
+        <div class="col-md-6 col-md-push-3 js-slider-nav hidden-sm hidden-xs">
+          <div class="m-w-5"><img data-lazy="http://placehold.it/600?text=1" class="img-responsive" /></div>
+          <div class="m-w-5"><img data-lazy="http://placehold.it/600?text=2" class="img-responsive" /></div>
+          <div class="m-w-5"><img data-lazy="http://placehold.it/600?text=3" class="img-responsive" /></div>
+        </div>
+        <!-- <ul class="bxslider" style="display:none">
           <li><img src="images/product-4.jpg" class="img-responsive" /></li>
           <li><img src="http://placehold.it/600x600" class="img-responsive" /></li>
           <li><img src="http://placehold.it/600x600" class="img-responsive" /></li>
@@ -46,13 +56,16 @@
           <a data-slide-index="0" href=""><img src="http://placehold.it/80x80" /></a>
           <a data-slide-index="1" href=""><img src="http://placehold.it/80x80" /></a>
           <a data-slide-index="2" href=""><img src="http://placehold.it/80x80" /></a>
-        </div>
+        </div> -->
       </div>
 
       <div class="col-md-5 col-sm-5 product_rightSec product_right_detail">
         <h3 class="product_name">挪威薄鹽鯖魚片(L)</h3>
         <p class="product_intro">鯖魚的油脂非常豐富，肉質相對也比較細嫩，非常適合燒烤。 （本品為冷凍儲藏產品）</p>
-        <p class="product_price">$55</p>
+        <p class="product_price">
+          $55 
+          <sup class="product_price-original"><s>$69</s></sup>
+        </p>
         <div class="row">
           <div class="col-xs-6 col-md-6">
             <h4 class="heading-small">產地</h4>
@@ -200,46 +213,6 @@
       <div class="col-md-5 product_rightSec">
         <div class="row mb-30">
           <div class="col-md-12">
-            <h4 class="heading-small">廚師的簡單料理</h4>
-            <div class="row">
-              <div class="col-xs-5 col-md-5">
-                <img src="http://placehold.it/200x250" class="img-responsive">
-              </div>
-              <div class="col-xs-7 col-md-7">
-                <div class="product_chef_name">林廚師</div>
-                <p class="product_chef_intro">
-                  京城的“乾山寿司”的厨师长小池孝次先生，他来自东京，入行20多年，就是那些能拿着地图跟你说时令的店长。
-                </p>
-                <div class="product_chef_address">
-                  <a href="">
-                    <i class="fa fa-map-marker"></i>台南市中西區青年路137巷16號
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="row mb-30">
-          <div class="col-xs-6 col-md-6 ">
-            <a href="">
-              <div class="product_recipe">
-                <img src="http://placehold.it/300x300" class="img-responsive" />
-                <span class="product_recipe_name">鯖魚煎蛋</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-xs-6 col-md-6 ">
-            <a href="">
-              <div class="product_recipe">
-                <img src="http://placehold.it/300x300" class="img-responsive" />
-                <span class="product_recipe_name">鯖魚煎蛋</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row mb-30">
-          <div class="col-md-12">
             <h4 class="heading-small">小知識</h4>
             <img src="http://placehold.it/600x300" alt="" class="img-responsive">
           </div>
@@ -289,6 +262,45 @@
                 
               </a>
             </div>
+          </div>
+        </div>
+                <div class="row mb-30">
+          <div class="col-md-12">
+            <h4 class="heading-small">廚師的簡單料理</h4>
+            <div class="row">
+              <div class="col-xs-5 col-md-5">
+                <img src="http://placehold.it/200x250" class="img-responsive">
+              </div>
+              <div class="col-xs-7 col-md-7">
+                <div class="product_chef_name">林廚師</div>
+                <p class="product_chef_intro">
+                  京城的“乾山寿司”的厨师长小池孝次先生，他来自东京，入行20多年，就是那些能拿着地图跟你说时令的店长。
+                </p>
+                <div class="product_chef_address">
+                  <a href="">
+                    <i class="fa fa-map-marker"></i>台南市中西區青年路137巷16號
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-30">
+          <div class="col-xs-6 col-md-6 ">
+            <a href="">
+              <div class="product_recipe">
+                <img src="http://placehold.it/300x300" class="img-responsive" />
+                <span class="product_recipe_name">鯖魚煎蛋</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-6 ">
+            <a href="">
+              <div class="product_recipe">
+                <img src="http://placehold.it/300x300" class="img-responsive" />
+                <span class="product_recipe_name">鯖魚煎蛋</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@
           <div class="row">
               <div class="navbar-header col-sm-3 col-md-2">
                   <a class=
-                  "brand" href="index.php">
+                  "brand" href="/">
                     <img src="images/logo.jpg" alt="" class="img-responsive">
                   </a>
               </div>
@@ -26,6 +26,9 @@
                     <li class="nav_top-list">
                       <a href="">配送說明</a>
                     </li>
+                    <li class="nav_top-list hidden-sm">
+                      <a href="">聯絡我們</a>
+                    </li>
                   </ul>
                   <div class="header_search">
                     <form id="search_form" action="" method="post" async="false">
@@ -39,7 +42,7 @@
                   <div class="nav_acccart pull-right">
                     <!-- <a href=""><i class="fa fa-search"></i></a> -->
                     <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-user"></i></a>
-                    <a href="#" class="sb-toggle-right">
+                    <a href="#" class="sb-toggle-right my-other-button">
                       <i class="fa fa-shopping-basket"></i>
                       <span class="badge cart_badge">4</span>
                     </a>
@@ -90,8 +93,9 @@
         <a href="" class="menu-mob-link btn-menu sb-toggle-left">
           <i class="fa fa-navicon"></i>
         </a>
-
-        <img src="images/logo.jpg" alt="" class="img-responsive logo-mob">
+        
+        <a href="/" ><img src="images/logo.jpg" alt="" class="img-responsive logo-mob"></a>
+        
 
       <div class="pull-right">
         <a href="" class="menu-mob-link" data-toggle="modal" data-target="#login-modal">

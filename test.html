@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Slidebars Dev Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/vendor/bxslider/jquery.bxslider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="js/vendor/slidebars2/slidebars.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="js/vendor/slick/slick.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="js/vendor/slick/slick-theme.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
+</head>
+
+<body>
+    <div canvas="container">
+        <!--header-->
+        <div class="header_top"></div>
+        <div class="menu-lg hidden-xs">
+            <header class="container">
+                <div class="navbar navbar-inner">
+                    <div class="row">
+                        <div class="navbar-header col-sm-3 col-md-2">
+                            <a class="brand" href="/">
+                                <img src="images/logo.jpg" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main-menu">
+                            <div class="nav_top_wrapper">
+                                <ul class="nav_top list-inline">
+                                    <li class="nav_top-list">
+                                        <a href="">關於我們</a>
+                                    </li>
+                                    <li class="nav_top-list">
+                                        <a href="">小知識</a>
+                                    </li>
+                                    <li class="nav_top-list">
+                                        <a href="">料理教室</a>
+                                    </li>
+                                    <li class="nav_top-list">
+                                        <a href="">配送說明</a>
+                                    </li>
+                                    <li class="nav_top-list hidden-sm">
+                                        <a href="">聯絡我們</a>
+                                    </li>
+                                </ul>
+                                <div class="header_search">
+                                    <form id="search_form" action="" method="post" async="false">
+                                        <input name="search_keywords" placeholder="搜尋..." type="text">
+                                        <button class="search_button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="nav_acccart pull-right">
+                                    <!-- <a href=""><i class="fa fa-search"></i></a> -->
+                                    <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-user"></i></a>
+                                    <a href="javascript: void(0)" class="js-open-right-slidebar">
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <span class="badge cart_badge">4</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="nav_main">
+                                <ul class="nav">
+                                    <li>
+                                        <a class="active" href="#" id="home">鍋物鮮料組</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">饕客優惠套餐</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">生鮮魚坊 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">鮮饗蝦蟹  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">軟貝珍味  </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">懶人料理包</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">依調理方式<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">適合煎</a></li>
+                                            <li><a href="#">適合烤</a></li>
+                                            <li><a href="#">適合炸</a></li>
+                                            <li><a href="#">紅燒</a></li>
+                                            <li><a href="#">適合下湯</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!--menu-->
+        <div class="container-fluid menu-mob">
+            <div class="visible-xs">
+                <div class="row">
+                    <a href="" class="menu-mob-link btn-menu sb-toggle-left">
+                        <i class="fa fa-navicon"></i>
+                    </a>
+                    <a href="/"><img src="images/logo.jpg" alt="" class="img-responsive logo-mob"></a>
+                    <div class="pull-right">
+                        <a href="" class="menu-mob-link" data-toggle="modal" data-target="#login-modal">
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <a href="javascript: void(0)" class="menu-mob-link js-open-right-slidebar">
+                            <i class="fa fa-shopping-basket"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <div class="container page_content">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 product_slide product_leftSec">
+                    <div class="js-slider-for">
+                        <div><img src="http://placehold.it/600?text=1" class="img-responsive" /></div>
+                        <div><img src="http://placehold.it/600?text=2" class="img-responsive" /></div>
+                        <div><img src="http://placehold.it/600?text=3" class="img-responsive" /></div>
+                    </div>
+                    <div class="col-md-6 col-md-push-3 js-slider-nav hidden-sm hidden-xs">
+                        <div class="m-w-5"><img data-lazy="http://placehold.it/600?text=1" class="img-responsive" /></div>
+                        <div class="m-w-5"><img data-lazy="http://placehold.it/600?text=2" class="img-responsive" /></div>
+                        <div class="m-w-5"><img data-lazy="http://placehold.it/600?text=3" class="img-responsive" /></div>
+                    </div>
+                    <!-- <ul class="bxslider" style="display:none">
+			          <li><img src="images/product-4.jpg" class="img-responsive" /></li>
+			          <li><img src="http://placehold.it/600x600" class="img-responsive" /></li>
+			          <li><img src="http://placehold.it/600x600" class="img-responsive" /></li>
+			        </ul>
+
+			        <div id="bx-pager" class="hidden-xs hidden-sm">
+			          <a data-slide-index="0" href=""><img src="http://placehold.it/80x80" /></a>
+			          <a data-slide-index="1" href=""><img src="http://placehold.it/80x80" /></a>
+			          <a data-slide-index="2" href=""><img src="http://placehold.it/80x80" /></a>
+			        </div> -->
+                </div>
+                <div class="col-md-5 col-sm-5 product_rightSec product_right_detail">
+                    <h3 class="product_name">挪威薄鹽鯖魚片(L)</h3>
+                    <p class="product_intro">鯖魚的油脂非常豐富，肉質相對也比較細嫩，非常適合燒烤。 （本品為冷凍儲藏產品）</p>
+                    <p class="product_price">
+                        $55
+                        <sup class="product_price-original"><s>$69</s></sup>
+                    </p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <h4 class="heading-small">產地</h4>
+                            <img src="images/flag-norway.gif" alt=""> &nbsp; 挪威
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <h4 class="heading-small">淨重</h4> 150g~170g/片冷凍真空包裝
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="product_discount">
+                                2包 (每包$53元) 省 <span class="text-highlight">9%</span>
+                                <br> 2包 (每包$53元) 省 <span class="text-highlight">9%</span>
+                                <br> 2包 (每包$53元) 省 <span class="text-highlight">9%</span>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  hidden-sm">
+                        <div class="col-md-12">
+                            <div class="product_qty">
+                                <a href="javascript: void(0)">-</a>
+                                <span>1</span>
+                                <a href="javascript: void(0)">+</a>
+                            </div>
+                            <div class="product_addCart pull-right">
+                                <button class="btn-primary btn-buy"><i class="fa fa-shopping-basket"></i>加到購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-30  hidden-sm">
+                        <div class="col-md-12 product_cooking">
+                            <h4 class="heading-small">烹調方式</h4>
+                            <div class="product_cooking-icon">
+                                <img src="http://placehold.it/80x80" alt=""> 適合烤
+                            </div>
+                            <div class="product_cooking-icon">
+                                <img src="http://placehold.it/80x80" alt=""> 適合煎
+                            </div>
+                            <div class="product_cooking-icon">
+                                <img src="http://placehold.it/80x80" alt=""> 適合炸
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row  visible-sm">
+                <div class="col-sm-12">
+                    <div class="row mt-50">
+                        <div class="col-md-12">
+                            <div class="product_qty">
+                                <a href="javascript: void(0)">-</a>
+                                <span>1</span>
+                                <a href="javascript: void(0)">+</a>
+                            </div>
+                            <div class="product_addCart pull-right">
+                                <button class="btn-primary btn-buy"><i class="fa fa-shopping-basket"></i>加到購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-30">
+                        <div class="col-md-12 product_cooking">
+                            <h4 class="heading-small">烹調方式</h4>
+                            <div class="product_cooking-icon">
+                                <img src="http://placehold.it/80x80" alt=""> 適合烤
+                            </div>
+                            <div class="product_cooking-icon">
+                                <img src="http://placehold.it/80x80" alt=""> 適合煎
+                            </div>
+                            <div class="product_cooking-icon">
+                                <img src="http://placehold.it/80x80" alt=""> 適合炸
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 product_leftSec">
+                    <div class="row mb-30">
+                        <div class="col-md-12">
+                            <h4 class="heading-small">商品說明</h4>
+                            <img src="http://placehold.it/900x1200" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row mb-30">
+                        <div class="col-md-12 product_spec">
+                            <h4 class="heading-small">商品規格</h4>
+                            <ul class="product_spec-list">
+                                <li>保存方式：冷凍 -18℃</li>
+                                <li>產地：挪威(台灣加工)</li>
+                                <li>包裝方式：210~250g/片冷凍真空包裝</li>
+                                <li>淨重 :190g±10%/片</li>
+                                <li>賞味期限：一年</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-30">
+                        <div class="col-md-12">
+                            <div class=" product_bottom-bg clearfix">
+                                <div class="clearfix">
+                                    <div class="row">
+                                        <div class="col-xs-4 product_price">$55</div>
+                                        <div class="col-xs-8 col-sm-5 pull-right product_bottom_discount">
+                                            2包 (每包$53元) 省 <span class="text-highlight">9%</span>
+                                            <br> 2包 (每包$53元) 省 <span class="text-highlight">9%</span>
+                                            <br> 12包 (每包$53元) 省 <span class="text-highlight">11%</span>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-push-1 product_bottom-action">
+                                            <div class="product_qty">
+                                                <a href="javascript: void(0)">-</a>
+                                                <span>1</span>
+                                                <a href="javascript: void(0)">+</a>
+                                            </div>
+                                            <div class="product_addCart">
+                                                <button class="btn-primary btn-buy"><i class="fa fa-shopping-basket"></i>加到購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 product_rightSec">
+                    <div class="row mb-30">
+                        <div class="col-md-12">
+                            <h4 class="heading-small">小知識</h4>
+                            <img src="http://placehold.it/600x300" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row mb-30">
+                        <div class="col-md-12">
+                            <h4 class="heading-small">你可能會喜歡</h4>
+                            <div class="product_recommend-item col-sm-4 col-md-12">
+                                <a class="" href="">
+                                    <div class="row product_recommend-link js-imgswap">
+                                        <div class="col-xs-4 product_image">
+                                            <img data-alt-src="http://placekitten.com/300/300" src="http://placehold.it/300x300" class="img-circle img-responsive">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="product_recommend_name">阿根廷天使紅蝦</div>
+                                            <div class="product_recommend_price">$1,000</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product_recommend-item col-sm-4 col-md-12">
+                                <a href="">
+                                    <div class="row product_recommend-link js-imgswap">
+                                        <div class="col-xs-4 product_image">
+                                            <img data-alt-src="http://placekitten.com/300/300" src="http://placehold.it/300x300" class="img-circle img-responsive">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="product_recommend_name">阿根廷天使紅蝦</div>
+                                            <div class="product_recommend_price">$1,000</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product_recommend-item col-sm-4 col-md-12">
+                                <a href="">
+                                    <div class="row product_recommend-link js-imgswap">
+                                        <div class="col-xs-4 product_image">
+                                            <img data-alt-src="http://placekitten.com/300/300" src="http://placehold.it/300x300" class="img-circle img-responsive">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="product_recommend_name">阿根廷天使紅蝦</div>
+                                            <div class="product_recommend_price">$1,000</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-30">
+                        <div class="col-md-12">
+                            <h4 class="heading-small">廚師的簡單料理</h4>
+                            <div class="row">
+                                <div class="col-xs-5 col-md-5">
+                                    <img src="http://placehold.it/200x250" class="img-responsive">
+                                </div>
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="product_chef_name">林廚師</div>
+                                    <p class="product_chef_intro">
+                                        京城的“乾山寿司”的厨师长小池孝次先生，他来自东京，入行20多年，就是那些能拿着地图跟你说时令的店长。
+                                    </p>
+                                    <div class="product_chef_address">
+                                        <a href="">
+                                            <i class="fa fa-map-marker"></i>台南市中西區青年路137巷16號
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-30">
+                        <div class="col-xs-6 col-md-6 ">
+                            <a href="">
+                                <div class="product_recipe">
+                                    <img src="http://placehold.it/300x300" class="img-responsive" />
+                                    <span class="product_recipe_name">鯖魚煎蛋</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-6 ">
+                            <a href="">
+                                <div class="product_recipe">
+                                    <img src="http://placehold.it/300x300" class="img-responsive" />
+                                    <span class="product_recipe_name">鯖魚煎蛋</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / container page_content -->
+        <!-- end -->
+        <h1>Slidebars Dev Page</h1>
+        <p>You'd need to open the console to view the results of some of these tests.</p>
+        <h4>Left Slidebar Controls</h4>
+        <p>
+            <button class="js-open-left-slidebar">Open left Slidebar</button>
+            <button class="js-close-left-slidebar">Close left Slidebar</button>
+            <button class="js-toggle-left-slidebar">Toggle left Slidebar</button>
+        </p>
+        <h4>Right Slidebar Controls</h4>
+        <p>
+            <button class="js-open-right-slidebar">Open right Slidebar</button>
+            <button class="js-close-right-slidebar">Close right Slidebar</button>
+            <button class="js-toggle-right-slidebar">Toggle right Slidebar</button>
+        </p>
+        <h4>Top Slidebar Controls</h4>
+        <p>
+            <button class="js-open-top-slidebar">Open top Slidebar</button>
+            <button class="js-close-top-slidebar">Close top Slidebar</button>
+            <button class="js-toggle-top-slidebar">Toggle top Slidebar</button>
+        </p>
+        <h4>Bottom Slidebar Controls</h4>
+        <p>
+            <button class="js-open-bottom-slidebar">Open bottom Slidebar</button>
+            <button class="js-close-bottom-slidebar">Close bottom Slidebar</button>
+            <button class="js-toggle-bottom-slidebar">Toggle bottom Slidebar</button>
+        </p>
+        <h4>Other Controls</h4>
+        <p>
+            <button class="js-close-any-slidebar">Close any Slidebar</button>
+        </p>
+        <h4>Initialization, Exit and CSS Reset</h4>
+        <p>
+            <button class="js-initialize-slidebars">Initialize Slidebars</button>
+            <button class="js-exit-slidebars">Exit Slidebars</button>
+            <button class="js-reset-slidebars-css">Reset Slidebars CSS</button>
+        </p>
+        <h4>Is and Get</h4>
+        <p>
+            <button class="js-is-active">Is Slidebars active?</button>
+            <button class="js-is-active-slidebar">Is Slidebar with id active?</button>
+            <button class="js-get-active-slidebar">Get id of active Slidebar</button>
+            <button class="js-get-all-slidebars">Get all Slidebar id's</button>
+            <button class="js-get-slidebar">Get Slidebar by id</button>
+        </p>
+        <h4>Callbacks</h4>
+        <p>
+            <button class="js-init-callback">Init callback</button>
+            <button class="js-exit-callback">Exit callback</button>
+            <button class="js-css-callback">CSS callback</button>
+            <button class="js-open-callback">Open callback</button>
+            <button class="js-close-callback">Close callback</button>
+            <button class="js-toggle-callback">Toggle callback</button>
+        </p>
+    </div>
+    <div off-canvas="slidebar-1 left reveal">
+        <p>Slidebar with id 'slidebar-1' on the left side and reveal style.</p>
+    </div>
+    <div off-canvas="sb-right right reveal" class="sb-slidebar sb-right sb-width-wide slide_cart">
+        <div class="height-full">
+            <div class="height-full">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="scart_title">購物車 <span>2項商品</span></h2>
+                        <a href="javascript: void(0)" class="pull-right sb-close js-close-right-slidebar"><i class="fa fa-close fa-lg"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="row">
+  			<div class="col-xs-12">
+	  			<div class="info_panel text-center">還差 $200 即可享免運優惠</div>
+	  		</div>
+  		</div> -->
+                <div class="scart_container">
+                    <div class="row scart_product_wrapper">
+                        <!-- <div class="row">
+            <div class="col-xs-12">
+              <div class="info_panel text-center">還差 $200 即可享免運優惠</div>
+            </div>
+          </div> -->
+                        <div class="row scart_product">
+                            <div class="col-xs-12">
+                                <div class="col-xs-3 scart_product_image">
+                                    <img src="images/product-4.jpg" class="img-responsive">
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="scart_product_name">
+                                        挪威薄鹽鯖魚片(L)
+                                        <a href="javascript: void(0)" class="pull-right scart_product_trash">
+                                            <i class="fa fa-trash-o"></i>
+                                        </a>
+                                    </div>
+                                    <div class="scart_product_price">
+                                        <span>$1,000</span>
+                                        <div class="product_qty">
+                                            <a href="javascript: void(0)">-</a>
+                                            <span>1</span>
+                                            <a href="javascript: void(0)">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row scart_product">
+                            <div class="col-xs-12">
+                                <div class="col-xs-3 scart_product_image">
+                                    <img src="images/product-3.jpg" class="img-responsive">
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="scart_product_name">
+                                        澎湖花枝丸
+                                        <a href="javascript: void(0)" class="pull-right scart_product_trash">
+                                            <i class="fa fa-trash-o"></i>
+                                        </a>
+                                    </div>
+                                    <div class="scart_product_price">
+                                        <span>$1,000</span>
+                                        <div class="product_qty">
+                                            <a href="javascript: void(0)">-</a>
+                                            <span>1</span>
+                                            <a href="javascript: void(0)">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row scart_add">
+                            <div class="scart_add_title">
+                                <h4>加購商品</h4>
+                            </div>
+                            <div class="scart_add_wrapper">
+                                <div class="slider-c">
+                                    <div class="scart_add_product">
+                                        <a href="#"><img src="http://placehold.it/300x300" class="cennter-block img-responsive"></a>
+                                        <div>
+                                            <a href="#" class="scart_add_product_name">挪威薄鹽鯖魚片(L)</a>
+                                            <div class="price">
+                                                <span>$55</span>
+                                                <a href="" class="pull-right"><i class="fa fa-check-square"></i> 加購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scart_add_product">
+                                        <a href="#"><img src="http://placehold.it/300x300" class="cennter-block img-responsive"></a>
+                                        <div>
+                                            <a href="#" class="scart_add_product_name">挪威薄鹽鯖魚片(L)</a>
+                                            <div class="price">
+                                                <span>$55</span>
+                                                <a href="" class="pull-right"><i class="fa fa-check-square"></i> 加購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scart_add_product">
+                                        <a href="#"><img src="http://placehold.it/300x300" class="cennter-block img-responsive"></a>
+                                        <div>
+                                            <a href="#" class="scart_add_product_name">挪威薄鹽鯖魚片(L)</a>
+                                            <div class="price">
+                                                <span>$55</span>
+                                                <a href="" class="pull-right"><i class="fa fa-plus-square-o"></i> 加購</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                <div class="col-xs-6 scart_add_product">
+                  <a href="#"><img src="images/product-2.jpg" class="cennter-block img-responsive"></a>
+                  <div>
+                      <a href="#" class="scart_add_product_name">挪威薄鹽鯖魚片(L)</a>
+                      <div class="price">
+                        <span>$55</span>
+                        <a href="" class="pull-right"><i class="fa fa-check-square"></i> 加購</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-6  scart_add_product">
+                  <a href="#"><img src="images/product-1.jpg" class="cennter-block img-responsive"></a>
+                  <div>
+                      <a href="#" class="scart_add_product_name">挪威薄鹽鯖魚片(L)</a>
+                      <div class="price">
+                        <span>$55</span>
+                        <a href="" class="pull-right"><i class="fa fa-plus-square-o"></i> 加購</a>
+                      </div>
+                  </div>
+                </div>
+              </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row scart_bottom">
+                        <div class="row">
+                            <span>運費：</span>
+                            <span class="pull-right text-highlight">$120</span>
+                        </div>
+                        <div class="row">
+                            <span>總計：</span>
+                            <span class="pull-right text-highlight scart_bottom_total">$1,120</span>
+                        </div>
+                        <button class="btn-primary btn-buy" onclick="window.location.href='pay.php' ">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/vendor/slidebars2/slidebars.js"></script>
+    <script src="js/vendor/slick/slick.min.js"></script>
+    <script src="js/vendor/jquery.lazyload.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+    $(function() {
+
+        $(".slider-c, .regular").slick({
+            dots: true,
+            infinite: true,
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        });
+
+        $('.slider-c, .regular').show();
+
+
+    });
+    </script>
+</body>
+
+</html>

@@ -3,24 +3,25 @@
 <script src="js/vendor/slidebars/slidebars.min.js" type="text/javascript"></script>
 <script src="js/vendor/slick/slick.min.js"></script>
 <script src="js/vendor/jquery.lazyload.min.js"></script>
+
 <script>
 
-//
-// (function($) {
-//     $(document).ready(function() {
-//       var mySlidebars = new $.slidebars();
-//       $('.my-button').on('click', function() {
-//         mySlidebars.slidebars.open('left');
-//       });
-//       $('.my-other-button').on('click', function() {
-//         mySlidebars.slidebars.open('right');
-//         $('.slider-c').get(0).slick.setPosition();
-//       });
-//       $('.my-third-button').click(mySlidebars.slidebars.close);
 
-//     });
-//   }) (jQuery);
-//
+(function($) {
+    $(document).ready(function() {
+      var mySlidebars = new $.slidebars();
+      $('.my-button').on('click', function() {
+        mySlidebars.slidebars.open('left');
+      });
+      $('.my-other-button').on('click', function() {
+        mySlidebars.slidebars.toggle('right');
+        $('.slider-c').get(0).slick.setPosition();
+        // $('.slider-c').slick('setPosition');
+      });
+      $('.my-third-button').click(mySlidebars.slidebars.close);
+    });
+  }) (jQuery);
+
 
 
       (function($) {

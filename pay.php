@@ -104,7 +104,7 @@
                 </div>
               </div>
               <div class="col-sm-10 col-sm-offset-2">
-                <p class=" mt-20">嗨! 建議<a href="#">登入會員</a>以使用折扣券等好康!!</p>
+                <p class=" mt-20">嗨! 建議<a href="#" data-toggle="modal" data-target="#login-modal">登入會員</a>以使用折扣券等好康!!</p>
                 <p>
                   每一筆訂單限抵用一個序號；一經使用，無論是否退貨皆不得返還。恕不找零。 
                 </p>
@@ -244,6 +244,12 @@
                     <label>
                       <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                       貨到付款
+                    </label>
+                  </div>
+                  <div class="mt-20">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      ATM 轉帳
                     </label>
                   </div>
                 </div>
